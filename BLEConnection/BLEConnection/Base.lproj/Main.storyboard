@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLEConnection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uhl-aw-nh4">
+                                <rect key="frame" x="117" y="137" width="180.5" height="36"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5MT-9e-4EQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="36"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3l-m5-mHn">
+                                                <rect key="frame" x="16" y="9.5" width="57" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.47450980392156861" green="0.41568627450980389" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="e3l-m5-mHn" firstAttribute="centerY" secondItem="5MT-9e-4EQ" secondAttribute="centerY" id="Yd4-W7-BYU"/>
+                                            <constraint firstItem="e3l-m5-mHn" firstAttribute="leading" secondItem="5MT-9e-4EQ" secondAttribute="leading" constant="16" id="fbN-Be-QcQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="e3l-m5-mHn" secondAttribute="trailing" constant="16" id="kws-Bv-7N8"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerCurve" value="continuous"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UKI-jK-nXG" appends="YES" id="YLD-hg-w4Z"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5t-Dd-8XS">
+                                        <rect key="frame" x="109" y="0.0" width="71.5" height="36"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqg-MP-zLN">
+                                                <rect key="frame" x="16" y="9.5" width="39.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.47450980390000003" green="0.41568627450000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="Sqg-MP-zLN" firstAttribute="leading" secondItem="P5t-Dd-8XS" secondAttribute="leading" constant="16" id="HmF-3f-QQY"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sqg-MP-zLN" secondAttribute="trailing" constant="16" id="Qck-u7-Jwq"/>
+                                            <constraint firstItem="Sqg-MP-zLN" firstAttribute="centerY" secondItem="P5t-Dd-8XS" secondAttribute="centerY" id="S3Y-Ic-fQG"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerCurve" value="continuous"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="NMm-hD-gnZ" appends="YES" id="deZ-EO-1F8"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="70I-S2-Sqs"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VMc-pm-3hn">
+                                <rect key="frame" x="139.5" y="203" width="135.5" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Name: None " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRN-p5-FhP">
+                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Disconnect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHl-QT-LOo">
+                                        <rect key="frame" x="0.0" y="27" width="135.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cyG-gY-lw0">
+                                <rect key="frame" x="139.5" y="437.5" width="135" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Led control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByE-mp-oZ0">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-7p-VXx">
+                                        <rect key="frame" x="86" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchLed:" destination="BYZ-38-t0r" eventType="valueChanged" id="B6l-JG-svR"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uhl-aw-nh4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KSP-NP-qbg"/>
+                            <constraint firstItem="VMc-pm-3hn" firstAttribute="top" secondItem="Uhl-aw-nh4" secondAttribute="bottom" constant="30" id="Ps9-ND-Mml"/>
+                            <constraint firstItem="cyG-gY-lw0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e8j-Gy-Chz"/>
+                            <constraint firstItem="Uhl-aw-nh4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="kPC-g8-LC8"/>
+                            <constraint firstItem="cyG-gY-lw0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tYw-cU-GCo"/>
+                            <constraint firstItem="VMc-pm-3hn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="z9H-ID-NLC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectB" destination="e3l-m5-mHn" id="lt1-I1-J1k"/>
+                        <outlet property="detailT" destination="VMc-pm-3hn" id="vM3-Eh-dTe"/>
+                        <outlet property="deviceName" destination="KRN-p5-FhP" id="u8G-U5-a58"/>
+                        <outlet property="statusT" destination="GHl-QT-LOo" id="Hdc-E1-xYi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UKI-jK-nXG" userLabel="Connect">
+                    <connections>
+                        <action selector="connect:" destination="BYZ-38-t0r" id="NpN-Ae-FTv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="NMm-hD-gnZ" userLabel="Detail">
+                    <connections>
+                        <action selector="detail:" destination="BYZ-38-t0r" id="O74-XS-cz9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="65" y="63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Scene: UIViewController {
+class Home: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
